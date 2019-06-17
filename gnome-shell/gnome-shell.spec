@@ -1,6 +1,6 @@
 Name:           gnome-shell
 Version:        3.32.2
-Release:        4.1%{?dist}.idnovic
+Release:        4.2%{?dist}.dk
 Summary:        Window management and application launching for GNOME
 
 	
@@ -164,7 +164,7 @@ Patch18: gnome-shell-525.diff
 Patch19: gnome-shell-514.diff
 
 %post
-setcap CAP_SYS_NICE=+ep %{_bindir}/gnome-shell
+#setcap CAP_SYS_NICE=+ep %{_bindir}/gnome-shell
 ### end downstream changes
 
 %description
